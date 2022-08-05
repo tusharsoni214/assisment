@@ -1,0 +1,33 @@
+
+<div class="container p-5">
+  <div class="row" >
+    <div class="col-md-12" [formGroup]="registerForm">
+      <h1>Register</h1>
+      <div class="form-group mt-2 ">
+        <label for="firstName"><b>First Name</b></label>
+        <input type="text" class="form-control   textAlign_Center" id="firstName" placeholder="Enter First Name"
+          formControlName="firstName">
+      </div>
+      <div class="form-group mt-2 ">
+        <label for="lastName"><b>Last Name</b></label>
+        <input type="text" class="form-control  textAlign_Center" id="lastName" placeholder="Enter Last Name"
+          formControlName="lastName">
+      </div>
+      <div class="form-group mt-2 ">
+        <label for="userName"><b>User Name</b></label>
+        <input type="email"  class="form-control  textAlign_Center"  id="userName"  placeholder="Enter User Name" formControlName="userName">
+      </div>
+      <div class="form-group mt-2 ">
+        <label for="password"><b>Password</b></label>
+        <input type="password" class="form-control  textAlign_Center"  id="password"  placeholder="Enter Password" formControlName="password">
+      </div>
+      <!-- <button type="submit" class="btn btn-success mt-3 "  routerLink="/login">Login</button> &nbsp; -->
+      <a routerLink="/login" class="m-2">Login?</a>
+      <button type="submit" class="btn btn-primary w-50 m-3" [disabled]="registerForm.invalid" (click)="registerBtn()">Register</button>&nbsp;
+    </div>
+  </div>
+</div>
+
+
+
+

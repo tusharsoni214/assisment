@@ -1,0 +1,19 @@
+<div class="container-fluid m-3 p-5">
+  <div class="row">
+    <div class="col-md-12" [formGroup]="loginForm" >
+      <h1 >Login</h1>
+      <div class="form-group mt-2 ">
+        <label for="userName"><b>User Name</b></label>
+        <input type="email" class="form-control textAlign_Center"  id="userName"  placeholder="Enter User Name" formControlName="userName">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group mt-2 ">
+        <label for="password"><b>Password</b></label>
+        <input type="password" class="form-control  textAlign_Center"  id="password"  placeholder="Enter Password" formControlName="password">
+      </div>
+      <!-- <button type="submit" class="btn btn-primary w-50 mt-3 " routerLink="/register">Register </button> &nbsp; -->
+      <a routerLink="/register" class="m-3">Register?</a>
+      <button type="submit" class="btn btn-success m-3 w-50" [disabled]="loginForm.invalid" (click)="loginBtn()">Login</button>
+    </div>
+  </div>
+</div>

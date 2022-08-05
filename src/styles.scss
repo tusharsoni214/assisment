@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+input.ng-invalid
+{
+  border:2px solid red;
+  box-shadow: 0 0 0 0.25rem rgba(248, 70, 70, 0.325);
+}
+input.ng-valid
+{
+  border:2px solid rgb(102, 160, 15);
+  box-shadow: 0 0 0 0.25rem rgba(17, 253, 13, 0.325);
+
+}
