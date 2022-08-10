@@ -25,7 +25,7 @@ export class UserDataBaseComponent implements OnInit {
   }
   LogoutBtn()
   {
-    localStorage.removeItem("userData");
-    this.router.navigate(['/register'])
+    // localStorage.removeItem("userData");
+    this.router.navigate(['/login'])
   }
 }

@@ -30,7 +30,7 @@ export class WelcomeComponent implements OnInit {
   }
   LogoutBtn()
   {
-    localStorage.removeItem("userData");
-    this.router.navigate(['/register'])
+    // localStorage.removeItem("userData");
+    this.router.navigate(['/login'])
   }
 }
